@@ -2,23 +2,73 @@
 
 .home {
 
+  .form {
+    .btnReg {
+      margin-top: 12px;
+      margin-bottom: 30px;
+    }
+    .form1 {
+      position: relative;
+      height: 40px;
+    }
+    input {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-radius: 10px;
+      border-width: 2px;
+      margin: 3px;
+    }
+    h4 {
+      height: 18px;
+      display: flex;
+      align-items: flex-end;
+    }
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    //background: gray;
+  }
+
   .intro {
 
     img{
       // border-radius: 20px;
       .img-rounded();
+      padding-top: 5px;
 
       @media (max-width: @phone) {
         width: 100%;
+        
       }
+    }
+   
     }
 
     h2 {
       padding: 15px;
     }
 
+    @keyframes fotoInicial {
+      0% {
+        color: red;
+      }
+      25% {
+        color: blue;
+      }
+      50% {
+        color: green;
+      }
+      75% {
+        color: yellow;
+      }
+      }
+
     p {
       padding:0 15px;
+      animation-name: fotoInicial;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
     }
 
   }
@@ -121,5 +171,5 @@
       }
     }
   }
-}
+
 

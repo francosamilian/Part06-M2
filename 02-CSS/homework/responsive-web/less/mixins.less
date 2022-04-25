@@ -1,13 +1,23 @@
 // Mixins acá
-.flex(@direction: column-reverse, @justify: center, @align: center) {
+.flex(@direction: column, @justify: center, @align: center) {
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    // left: 0;
+    //width: 100%;
     display: flex;
     flex-direction: @direction;
     justify-content: @justify;
     align-items: @align;
+    padding-bottom: 2px;
+    padding-top: 5px;
 }
 
-.img-rounded(@radius: 20px) {
+.img-rounded(@radius: 15px) {
     border-radius: @radius;
+    margin-top: 90px;
+    // padding-top: 100px;
+    //margin-top: 5px;
 }
 
 // .btn() {

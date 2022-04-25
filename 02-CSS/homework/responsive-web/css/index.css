@@ -161,19 +161,25 @@ p {
   margin: 0 auto;
 }
 nav {
+  position: fixed;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2px;
+  padding-top: 5px;
   background-color: #F6F6F6;
 }
 nav ul {
-  width: 25%;
+  width: 35%;
   margin: 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 2px;
+  padding-top: 5px;
 }
 @media (max-width: 500px) {
   nav ul {
@@ -190,52 +196,97 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .form {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.home .form .btnReg {
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+.home .form .form1 {
+  position: relative;
+  height: 40px;
+}
+.home .form input {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 10px;
+  border-width: 2px;
+  margin: 3px;
+}
+.home .form h4 {
+  height: 18px;
+  display: flex;
+  align-items: flex-end;
+}
 .home .intro img {
-  border-radius: 20px;
+  border-radius: 15px;
+  margin-top: 90px;
+  padding-top: 5px;
 }
 @media (max-width: 500px) {
   .home .intro img {
     width: 100%;
   }
 }
-.home .intro h2 {
+.home h2 {
   padding: 15px;
 }
-.home .intro p {
-  padding: 0 15px;
+@keyframes fotoInicial {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: yellow;
+  }
 }
-.home .music-images {
+.home p {
+  padding: 0 15px;
+  animation-name: fotoInicial;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.music-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.home .music-images img {
+.music-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
 @media (max-width: 500px) {
-  .home .music-images .tecnologia,
-  .home .music-images .ondas {
+  .music-images .tecnologia,
+  .music-images .ondas {
     display: none;
   }
 }
 @media (max-width: 500px) {
-  .home .music-images .auricular {
+  .music-images .auricular {
     width: 100%;
   }
 }
-.home .musica-nueva {
+.musica-nueva {
   padding: 15px;
 }
-.home .musica-nueva h3 {
+.musica-nueva h3 {
   margin-top: 11px;
 }
-.home .musica-nueva p {
+.musica-nueva p {
   margin-top: 13px;
 }
-.home .actual {
+.actual {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
@@ -243,29 +294,31 @@ footer {
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .home .actual {
+  .actual {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2px;
+    padding-top: 5px;
     padding: 15px;
   }
 }
-.home .actual .actual-text {
+.actual .actual-text {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .home .actual .actual-text {
+  .actual .actual-text {
     width: 100%;
   }
 }
-.home .actual .actual-text h3 {
+.actual .actual-text h3 {
   margin-bottom: 10px;
 }
-.home .actual .actual-text p {
+.actual .actual-text p {
   margin-bottom: 26px;
 }
-.home .actual .actual-text .btn {
+.actual .actual-text .btn {
   background-color: #23293B;
   color: #F6F6F6;
   cursor: pointer;
@@ -280,20 +333,20 @@ footer {
   border-radius: 0.25rem;
 }
 @media (max-width: 500px) {
-  .home .actual .actual-text .btn {
+  .actual .actual-text .btn {
     width: 100%;
   }
 }
-.home .actual .actual-img {
+.actual .actual-img {
   width: 46%;
   margin-left: 4%;
 }
 @media (max-width: 500px) {
-  .home .actual .actual-img {
+  .actual .actual-img {
     width: 100%;
   }
 }
-.home .actual .actual-img img {
+.actual .actual-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
