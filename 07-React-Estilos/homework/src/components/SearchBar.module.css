@@ -1,0 +1,31 @@
+.input {
+    border-radius: 5px;
+    margin-right: 5px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnAgregar {
+    border: 2px solid #70e000;
+    border-radius: 6px;
+    border-color: #70e000;
+    background-color: grey;
+    color: #70e000;
+    height: 40px;
+    width: 90px;
+}
+
+.container {
+    /* width: 450px; */
+    background-color: #ced4da;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.btnAgregar:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
